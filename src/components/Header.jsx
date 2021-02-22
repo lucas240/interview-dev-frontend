@@ -8,10 +8,12 @@ import {
   NavLink,
 } from "reactstrap";
 
+import "./header.css";
+
 function Header() {
   return (
     <div>
-      <Navbar color="primary" dark expand="md">
+      <Navbar className="header" dark expand="md">
         <NavbarBrand>Les Argonautes </NavbarBrand>
         <Collapse navbar>
           <Nav className="mr-auto" navbar>
