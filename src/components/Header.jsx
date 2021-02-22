@@ -1,26 +1,40 @@
 import React from "react";
+import {
+  Collapse,
+  Navbar,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+} from "reactstrap";
 
 function Header() {
   return (
-    <header>
-      <h1>Les Argonautes </h1>
-      <div>
-        <h3>Liens github</h3>
-        <a
-          target="_blank"
-          href="https://github.com/lucas240/interview-dev-frontend"
-        >
-          Frontend
-        </a>
-        <br />
-        <a
-          target="_blank"
-          href="https://github.com/lucas240/interview-dev-backend"
-        >
-          Backend
-        </a>
-      </div>
-    </header>
+    <div>
+      <Navbar color="primary" dark expand="md">
+        <NavbarBrand>Les Argonautes </NavbarBrand>
+        <Collapse navbar>
+          <Nav className="mr-auto" navbar>
+            <NavItem>
+              <NavLink
+                target="_blank"
+                href="https://github.com/lucas240/interview-dev-frontend"
+              >
+                GitHub Frontend
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                target="_blank"
+                href="https://github.com/lucas240/interview-dev-backend"
+              >
+                GitHub Backend
+              </NavLink>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Navbar>
+    </div>
   );
 }
 
