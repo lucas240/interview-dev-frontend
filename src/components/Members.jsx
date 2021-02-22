@@ -60,7 +60,7 @@ function Members() {
       <Row>
         {members.map((member) => {
           return (
-            <Col xs="2" className="text-center">
+            <Col xs="4" className="text-center">
               <Card key={member.id} className="m-2">
                 <CardBody>
                   <p>{member.name}</p>
