@@ -11,6 +11,8 @@ import {
   Input,
 } from "reactstrap";
 
+import "./members.css";
+
 function Members() {
   const [members, setMembers] = useState([]);
   const [value, setValue] = useState("");
@@ -34,10 +36,10 @@ function Members() {
 
   return (
     <>
-      <h4>les gens de l'équipage</h4>
       <Col md={6}>
+        <h4>Ajouter un(e) Argonaute</h4>
         <FormGroup>
-          <Label for="Text">Write your member:</Label>
+          <Label for="Text">Nom de l'Argonaute</Label>
           <Input
             required
             name="name"
@@ -57,10 +59,13 @@ function Members() {
           </Button>
         </FormGroup>
       </Col>
+      <Col>
+        <h4>Membres de l'équipage</h4>
+      </Col>
       <Row>
         {members.map((member) => {
           return (
-            <Col xs="4" className="text-center">
+            <Col xs="4" className="text-center member">
               <Card key={member.id} className="m-2">
                 <CardBody>
                   <p>{member.name}</p>
