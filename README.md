@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is for the Challenge of the Wild code school, in this project you can "Create" and "Read" members of a team, the members data are stock in a MySQL database located in my computer.
+This project is also deploy on [netlify](https://interview-dev.netlify.app/) but the backend is not deploy and need to be launch manually in local.
 
 ## Available Scripts
 
